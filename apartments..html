@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartments Nea Kallikratia | Резервација</title>
+    <meta name="description" content="Апартмани во Nea Kallikratia - резервирајте престој лесно и брзо.">
+
+    <style>
+        :root {
+            --gold: #c5a059;
+            --dark: #2c3e50;
+            --light: #f4f4f4;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        nav {
+            background: white;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .lang-switch button {
+            background: var(--gold);
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+
+        .hero {
+            height: 60vh;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 0 20px;
+            animation: slideshow 12s infinite;
+        }
+
+        @keyframes slideshow {
+            0% {
+                background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(IMG_0061.jpg);
+            }
+            50% {
+                background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(IMG_0062.jpg);
+            }
+            100% {
+                background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(IMG_0059.jpg);
+            }
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+        }
+
+        .container {
+            padding: 40px 10%;
+            text-align: center;
+        }
+
+        .slider-wrapper {
+            position: relative;
+            max-width: 650px;
+            margin: 25px auto;
+        }
+
+        .main-slider-image {
+            width: 100%;
+            border-radius: 15px;
+        }
+
+        .slider-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0,0,0,0.6);
+            color: white;
+            font-size: 30px;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .left { left: 10px; }
+        .right { right: 10px; }
+
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">Apartments</div>
+</nav>
+
+<section class="hero">
+    <h1>Добредојдовте</h1>
+    <p>Вашето место за одмор</p>
+</section>
+
+<div class="container">
+
+    <h2>Апартмани</h2>
+
+    <div class="slider-wrapper">
+        <button class="slider-btn left" onclick="prevSlide()">‹</button>
+        <img id="mainImage" src="IMG_0120.jpg" class="main-slider-image">
+        <button class="slider-btn right" onclick="nextSlide()">›</button>
+    </div>
+
+    <h3>Контакт</h3>
+    <a href="tel:+38970709020">📞 +38970709020</a><br>
+    <a href="https://wa.me/38970709020">WhatsApp</a>
+
+</div>
+
+<footer>
+    <p>© 2024 Apartments</p>
+</footer>
+
+<script>
+    const images = ["IMG_0120.jpg","IMG_0105.jpg","IMG_0119.jpg"];
+    let index = 0;
+
+    function nextSlide(){
+        index = (index + 1) % images.length;
+        document.getElementById("mainImage").src = images[index];
+    }
+
+    function prevSlide(){
+        index = (index - 1 + images.length) % images.length;
+        document.getElementById("mainImage").src = images[index];
+    }
+</script>
+
+</body>
+</html>
+   
