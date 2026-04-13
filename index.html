@@ -12,41 +12,41 @@
             --light: #f4f4f4;
         }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; color: var(--dark); line-height: 1.6; }
-        
+
         /* Navigation */
         nav { background: white; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
         .logo { font-weight: bold; font-size: 1.5rem; color: var(--dark); text-decoration: none; }
         .lang-switch button { background: var(--gold); border: none; color: white; padding: 5px 10px; cursor: pointer; border-radius: 3px; font-weight: bold; }
 
         /* Hero Section */
-        .hero { 
-               height: 60vh;
-    background-size: cover;
-    background-position: center;
+        .hero {
+            height: 60vh;
+            background-size: cover;
+            background-position: center;
             background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    padding: 0 20px;
-    animation: slideshow 12s infinite;
-    
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 0 20px;
+            animation: slideshow 12s infinite;
+
         }
-	@keyframes slideshow {
-    0% {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                          url("images/IMG_0061.jpg");
-    }
-    55% {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                          url("images/IMG_0062.jpg");
-    }
-    100% {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                          url("images/IMG_0059.jpg");
-    }
+        @keyframes slideshow {
+            0% {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url("images/IMG_0061.jpg");
+            }
+            55% {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url("images/IMG_0062.jpg");
+            }
+            100% {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url("images/IMG_0059.jpg");
+            }
         }
         .hero h1 { font-size: 3rem; margin-bottom: 10px; }
 
@@ -185,7 +185,7 @@
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon">
 </head>
 <body>
 
@@ -210,24 +210,24 @@
         <br>
         Уживајте во удобноста која ја заслужувате.
     </p>
-<br>
-	<!-- Апартман 1 -->
+    <br>
+    <!-- Апартман 1 -->
 
 
-<!-- Апартман 2 -->
+    <!-- Апартман 2 -->
 
 
-<!-- Апартман 3 -->
+    <!-- Апартман 3 -->
 
 
-<!-- Апартман 4 -->
+    <!-- Апартман 4 -->
 
-<!-- Апартман 5 -->
+    <!-- Апартман 5 -->
     <!-- ==================== АПАРТМАН 1 ==================== -->
     <b>Апартман 1</b>
     <div class="slider-wrapper">
         <button class="slider-btn left" onclick="prevSlide(1)">‹</button>
-       <img id="mainImage1" src="images/IMG_0117.jpg" alt="Апартман 1" onclick="openModal(0, 'apartman1')" class="main-slider-image">
+        <img id="mainImage1" src="images/IMG_0117.JPG" alt="Апартман 1" onclick="openModal(0, 'apartman1')" class="main-slider-image">
         <button class="slider-btn right" onclick="nextSlide(1)">›</button>
     </div>
 
@@ -235,7 +235,7 @@
     <b>Апартман 2</b>
     <div class="slider-wrapper">
         <button class="slider-btn left" onclick="prevSlide(2)">‹</button>
-       <img id="mainImage2" src="images/IMG_0107.jpg" alt="Апартман 2" onclick="openModal(0, 'apartman2')" class="main-slider-image">
+        <img id="mainImage2" src="images/IMG_0107.JPG" alt="Апартман 2" onclick="openModal(0, 'apartman2')" class="main-slider-image">
         <button class="slider-btn right" onclick="nextSlide(2)">›</button>
     </div>
 
@@ -243,7 +243,7 @@
     <b>Апартман 3</b>
     <div class="slider-wrapper">
         <button class="slider-btn left" onclick="prevSlide(3)">‹</button>
-   <img id="mainImage3" src="images/IMG_0088.jpg" alt="Апартман 3" onclick="openModal(0, 'apartman3')" class="main-slider-image">
+        <img id="mainImage3" src="images/IMG_0088.JPG" alt="Апартман 3" onclick="openModal(0, 'apartman3')" class="main-slider-image">
         <button class="slider-btn right" onclick="nextSlide(3)">›</button>
     </div>
 
@@ -251,7 +251,7 @@
     <b>Апартман 4</b>
     <div class="slider-wrapper">
         <button class="slider-btn left" onclick="prevSlide(4)">‹</button>
-      <img id="mainImage4" src="images/IMG_0075.jpg" alt="Апартман 4" onclick="openModal(0, 'apartman4')" class="main-slider-image">
+        <img id="mainImage4" src="images/IMG_0075.JPG" alt="Апартман 4" onclick="openModal(0, 'apartman4')" class="main-slider-image">
         <button class="slider-btn right" onclick="nextSlide(4)">›</button>
     </div>
 
@@ -259,7 +259,7 @@
     <b>Апартман 5</b>
     <div class="slider-wrapper">
         <button class="slider-btn left" onclick="prevSlide(5)">‹</button>
-       <img id="mainImage5" src="images/IMG_0061.jpg" alt="Апартман 5" onclick="openModal(0, 'apartman5')" class="main-slider-image">
+        <img id="mainImage5" src="images/IMG_0061.JPG" alt="Апартман 5" onclick="openModal(0, 'apartman5')" class="main-slider-image">
         <button class="slider-btn right" onclick="nextSlide(5)">›</button>
     </div>
 
@@ -274,7 +274,7 @@
     <div style="margin-top: 40px;">
         <h3 id="contact-us">Контактирајте нè за резервација:</h3>
         <a href="tel:+38970709020">
-        📞 +389 70 709 020
+            📞 +389 70 709 020
         </a>
         <br>
         <a href="https://www.facebook.com/apartmanineakalikratia/" target="_blank">
@@ -292,175 +292,175 @@
 <script>
     // ==================== ЈАЗИЦИ ====================
     const data = {
-    mk: {
-    heroTitle: "Добредојдовте во нашите апартмани",
-    heroSubtitle: "Вашето идеално место за одмор и релаксација",
-    aboutTitle: "За нас",
-    aboutText: "Добредојде во твојот дом далеку од дома.\nНашите апартмани нудат совршен спој на модерен комфор и автентичен амбиент, идеални за релаксација и незаборавни спомени.\nУживајте во удобноста која ја заслужувате.",
-    contactUs: "Контактирајте нè за резервација:",
-    btnText: "Резервирај преку WhatsApp"
-},
-    sr: {
-    heroTitle: "Dobrodošli u naše apartmane",
-    heroSubtitle: "Vaše idealno mesto za odmor i relaksaciju",
-    aboutTitle: "O nama",
-    aboutText: "Dobrodosli u svoj dom daleko od kuce.\nNasi apartmani pruzaju savrsenu kombinaciju modernog komfora i autentichnog ambijenta, idealni za potpunu relaksaciju i nezaboravne trenutke.\nUzivajte u udobnosti koju zasluzujete.",
-    contactUs: "Kontaktirajte nas za rezervaciju:",
-    btnText: "Rezerviši putem WhatsApp-a"
-}
-};
+        mk: {
+            heroTitle: "Добредојдовте во нашите апартмани",
+            heroSubtitle: "Вашето идеално место за одмор и релаксација",
+            aboutTitle: "За нас",
+            aboutText: "Добредојде во твојот дом далеку од дома.\nНашите апартмани нудат совршен спој на модерен комфор и автентичен амбиент, идеални за релаксација и незаборавни спомени.\nУживајте во удобноста која ја заслужувате.",
+            contactUs: "Контактирајте нè за резервација:",
+            btnText: "Резервирај преку WhatsApp"
+        },
+        sr: {
+            heroTitle: "Dobrodošli u naše apartmane",
+            heroSubtitle: "Vaše idealno mesto za odmor i relaksaciju",
+            aboutTitle: "O nama",
+            aboutText: "Dobrodosli u svoj dom daleko od kuce.\nNasi apartmani pruzaju savrsenu kombinaciju modernog komfora i autentichnog ambijenta, idealni za potpunu relaksaciju i nezaboravne trenutke.\nUzivajte u udobnosti koju zasluzujete.",
+            contactUs: "Kontaktirajte nas za rezervaciju:",
+            btnText: "Rezerviši putem WhatsApp-a"
+        }
+    };
 
     function changeLang(lang) {
-    document.getElementById('hero-title').innerText = data[lang].heroTitle;
-    document.getElementById('hero-subtitle').innerText = data[lang].heroSubtitle;
-    document.getElementById('about-title').innerText = data[lang].aboutTitle;
-    document.getElementById('about-text').innerText = data[lang].aboutText.replace(/\n/g,' ');
-    document.getElementById('contact-us').innerText = data[lang].contactUs;
-    document.getElementById('btn-text').innerText = data[lang].btnText;
-}
+        document.getElementById('hero-title').innerText = data[lang].heroTitle;
+        document.getElementById('hero-subtitle').innerText = data[lang].heroSubtitle;
+        document.getElementById('about-title').innerText = data[lang].aboutTitle;
+        document.getElementById('about-text').innerText = data[lang].aboutText.replace(/\n/g,' ');
+        document.getElementById('contact-us').innerText = data[lang].contactUs;
+        document.getElementById('btn-text').innerText = data[lang].btnText;
+    }
 
     // ==================== MODAL ====================
-const apartments = {
-    apartman1: [
-        "images/IMG_0117.jpg",
-        "images/IMG_0105.jpg",
-        "images/IMG_0119.jpg",
-        "images/IMG_0120.jpg",
-        "images/IMG_0116.jpg",
-        "images/IMG_0114.jpg",
-        "images/IMG_0113.jpg",
-        "images/IMG_0112.jpg",
-        "images/IMG_0111.jpg",
-        "images/IMG_0110.jpg",
-        "images/IMG_0115.jpg",
-        "images/IMG_0059.jpg"
-    ],
-    apartman2: [
-        "images/IMG_0107.jpg",
-        "images/IMG_0110.jpg",
-        "images/IMG_0108.jpg",
-        "images/IMG_0109.jpg",
-        "images/IMG_0106.jpg",
-        "images/IMG_0105.jpg",
-        "images/IMG_0104.jpg",
-        "images/IMG_0103.jpg",
-        "images/IMG_0102.jpg",
-        "images/IMG_0101.jpg",
-        "images/IMG_0100.jpg",
-        "images/IMG_0098.jpg",
-        "images/IMG_0097.jpg"
-    ],
-    apartman3: [
-        "images/IMG_0088.jpg",
-        "images/IMG_0076.jpg",
-        "images/IMG_0077.jpg",
-        "images/IMG_0085.jpg",
-        "images/IMG_0086.jpg",
-        "images/IMG_0087.jpg",
-        "images/IMG_0094.jpg",
-        "images/IMG_0089.jpg",
-        "images/IMG_0091.jpg",
-        "images/IMG_0092.jpg",
-        "images/IMG_0093.jpg",
-        "images/IMG_0095.jpg",
-        "images/IMG_0096.jpg"
-    ],
-    apartman4: [
-        "images/IMG_0075.jpg",
-        "images/IMG_0062.jpg",
-        "images/IMG_0073.jpg",
-        "images/IMG_0074.jpg",
-        "images/IMG_0081.jpg",
-        "images/IMG_0078.jpg",
-        "images/IMG_0079.jpg",
-        "images/IMG_0080.jpg",
-        "images/IMG_0082.jpg",
-        "images/IMG_0083.jpg",
-        "images/IMG_0084.jpg"
-    ],
-    apartman5: [
-        "images/IMG_0061.jpg",
-        "images/IMG_0072.jpg",
-        "images/IMG_0065.jpg",
-        "images/IMG_0066.jpg",
-        "images/IMG_0067.jpg",
-        "images/IMG_0068.jpg",
-        "images/IMG_0069.jpg",
-        "images/IMG_0070.jpg",
-        "images/IMG_0071.jpg"
-    ]
-};
+    const apartments = {
+        apartman1: [
+            "images/IMG_0117.jpg",
+            "images/IMG_0105.jpg",
+            "images/IMG_0119.jpg",
+            "images/IMG_0120.jpg",
+            "images/IMG_0116.jpg",
+            "images/IMG_0114.jpg",
+            "images/IMG_0113.jpg",
+            "images/IMG_0112.jpg",
+            "images/IMG_0111.jpg",
+            "images/IMG_0110.jpg",
+            "images/IMG_0115.jpg",
+            "images/IMG_0059.jpg"
+        ],
+        apartman2: [
+            "images/IMG_0107.jpg",
+            "images/IMG_0110.jpg",
+            "images/IMG_0108.jpg",
+            "images/IMG_0109.jpg",
+            "images/IMG_0106.jpg",
+            "images/IMG_0105.jpg",
+            "images/IMG_0104.jpg",
+            "images/IMG_0103.jpg",
+            "images/IMG_0102.jpg",
+            "images/IMG_0101.jpg",
+            "images/IMG_0100.jpg",
+            "images/IMG_0098.jpg",
+            "images/IMG_0097.jpg"
+        ],
+        apartman3: [
+            "images/IMG_0088.jpg",
+            "images/IMG_0076.jpg",
+            "images/IMG_0077.jpg",
+            "images/IMG_0085.jpg",
+            "images/IMG_0086.jpg",
+            "images/IMG_0087.jpg",
+            "images/IMG_0094.jpg",
+            "images/IMG_0089.jpg",
+            "images/IMG_0091.jpg",
+            "images/IMG_0092.jpg",
+            "images/IMG_0093.jpg",
+            "images/IMG_0095.jpg",
+            "images/IMG_0096.jpg"
+        ],
+        apartman4: [
+            "images/IMG_0075.jpg",
+            "images/IMG_0062.jpg",
+            "images/IMG_0073.jpg",
+            "images/IMG_0074.jpg",
+            "images/IMG_0081.jpg",
+            "images/IMG_0078.jpg",
+            "images/IMG_0079.jpg",
+            "images/IMG_0080.jpg",
+            "images/IMG_0082.jpg",
+            "images/IMG_0083.jpg",
+            "images/IMG_0084.jpg"
+        ],
+        apartman5: [
+            "images/IMG_0061.jpg",
+            "images/IMG_0072.jpg",
+            "images/IMG_0065.jpg",
+            "images/IMG_0066.jpg",
+            "images/IMG_0067.jpg",
+            "images/IMG_0068.jpg",
+            "images/IMG_0069.jpg",
+            "images/IMG_0070.jpg",
+            "images/IMG_0071.jpg"
+        ]
+    };
 
-const apartmentSlides = {
-    1: [
-        "images/IMG_0117.jpg",
-        "images/IMG_0105.jpg",
-        "images/IMG_0119.jpg",
-        "images/IMG_0120.jpg",
-        "images/IMG_0116.jpg",
-        "images/IMG_0114.jpg",
-        "images/IMG_0113.jpg",
-        "images/IMG_0112.jpg",
-        "images/IMG_0111.jpg",
-        "images/IMG_0110.jpg",
-        "images/IMG_0115.jpg",
-        "images/IMG_0059.jpg"
-    ],
-    2: [
-        "images/IMG_0107.jpg",
-        "images/IMG_0110.jpg",
-        "images/IMG_0108.jpg",
-        "images/IMG_0109.jpg",
-        "images/IMG_0106.jpg",
-        "images/IMG_0105.jpg",
-        "images/IMG_0104.jpg",
-        "images/IMG_0103.jpg",
-        "images/IMG_0102.jpg",
-        "images/IMG_0101.jpg",
-        "images/IMG_0100.jpg",
-        "images/IMG_0098.jpg",
-        "images/IMG_0097.jpg"
-    ],
-    3: [
-        "images/IMG_0088.jpg",
-        "images/IMG_0076.jpg",
-        "images/IMG_0077.jpg",
-        "images/IMG_0085.jpg",
-        "images/IMG_0086.jpg",
-        "images/IMG_0087.jpg",
-        "images/IMG_0094.jpg",
-        "images/IMG_0089.jpg",
-        "images/IMG_0091.jpg",
-        "images/IMG_0092.jpg",
-        "images/IMG_0093.jpg",
-        "images/IMG_0095.jpg",
-        "images/IMG_0096.jpg"
-    ],
-    4: [
-        "images/IMG_0075.jpg",
-        "images/IMG_0062.jpg",
-        "images/IMG_0073.jpg",
-        "images/IMG_0074.jpg",
-        "images/IMG_0081.jpg",
-        "images/IMG_0078.jpg",
-        "images/IMG_0079.jpg",
-        "images/IMG_0080.jpg",
-        "images/IMG_0082.jpg",
-        "images/IMG_0083.jpg",
-        "images/IMG_0084.jpg"
-    ],
-    5: [
-        "images/IMG_0061.jpg",
-        "images/IMG_0072.jpg",
-        "images/IMG_0065.jpg",
-        "images/IMG_0066.jpg",
-        "images/IMG_0067.jpg",
-        "images/IMG_0068.jpg",
-        "images/IMG_0069.jpg",
-        "images/IMG_0070.jpg",
-        "images/IMG_0071.jpg"
-    ]
-};
+    const apartmentSlides = {
+        1: [
+            "images/IMG_0120.jpg",
+            "images/IMG_0105.jpg",
+            "images/IMG_0119.jpg",
+            "images/IMG_0117.jpg",
+            "images/IMG_0116.jpg",
+            "images/IMG_0114.jpg",
+            "images/IMG_0113.jpg",
+            "images/IMG_0112.jpg",
+            "images/IMG_0111.jpg",
+            "images/IMG_0110.jpg",
+            "images/IMG_0115.jpg",
+            "images/IMG_0059.jpg"
+        ],
+        2: [
+            "images/IMG_0109.jpg",
+            "images/IMG_0110.jpg",
+            "images/IMG_0108.jpg",
+            "images/IMG_0107.jpg",
+            "images/IMG_0106.jpg",
+            "images/IMG_0105.jpg",
+            "images/IMG_0104.jpg",
+            "images/IMG_0103.jpg",
+            "images/IMG_0102.jpg",
+            "images/IMG_0101.jpg",
+            "images/IMG_0100.jpg",
+            "images/IMG_0098.jpg",
+            "images/IMG_0097.jpg"
+        ],
+        3: [
+            "images/IMG_0094.jpg",
+            "images/IMG_0076.jpg",
+            "images/IMG_0077.jpg",
+            "images/IMG_0085.jpg",
+            "images/IMG_0086.jpg",
+            "images/IMG_0087.jpg",
+            "images/IMG_0088.jpg",
+            "images/IMG_0089.jpg",
+            "images/IMG_0091.jpg",
+            "images/IMG_0092.jpg",
+            "images/IMG_0093.jpg",
+            "images/IMG_0095.jpg",
+            "images/IMG_0096.jpg"
+        ],
+        4: [
+            "images/IMG_0081.jpg",
+            "images/IMG_0062.jpg",
+            "images/IMG_0073.jpg",
+            "images/IMG_0074.jpg",
+            "images/IMG_0075.jpg",
+            "images/IMG_0078.jpg",
+            "images/IMG_0079.jpg",
+            "images/IMG_0080.jpg",
+            "images/IMG_0082.jpg",
+            "images/IMG_0083.jpg",
+            "images/IMG_0084.jpg"
+        ],
+        5: [
+            "images/IMG_0072.jpg",
+            "images/IMG_0061.jpg",
+            "images/IMG_0065.jpg",
+            "images/IMG_0066.jpg",
+            "images/IMG_0067.jpg",
+            "images/IMG_0068.jpg",
+            "images/IMG_0069.jpg",
+            "images/IMG_0070.jpg",
+            "images/IMG_0071.jpg"
+        ]
+    };
 
     let currentSlideIndex = { 1: 0, 2: 0, 3:0, 4:0, 5:0 };   // започнува од првата слика за секој апартман
 
